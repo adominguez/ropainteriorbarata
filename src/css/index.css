@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+
+.principal-container {
+    @apply flex justify-center w-full;
+}
+
+.centered-flex {
+    @apply flex justify-center;
+}
+
+.play-video-button {
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 60px solid white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+}
+
+.slider-range .ui-state-default:focus,
+.slider-range .ui-state-default:hover {
+    @apply bg-secondary-500;
+}
+
+@tailwind utilities;
