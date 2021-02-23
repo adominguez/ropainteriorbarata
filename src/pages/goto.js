@@ -20,7 +20,7 @@ const Goto = ({location}) => {
                 setUrlToRedirect(`${url[0]}/s?k=${url[1]}`);
             } else {
                 url = searchSplitted[1].split('&tag=')
-                setUrlToRedirect(`${url[0]}/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&${url[1]}`);
+                setUrlToRedirect(`${url[0]}/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=${url[1]}`);
             }
         } else {
             window.location = '/';
